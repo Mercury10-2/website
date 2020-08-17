@@ -1,28 +1,59 @@
+<!--
+Изменить картинку в Bar
+Ссылки на спортивное программирование
+Класс для формата текста
+-->
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<v-app app>
+		<v-app-bar app>
+			<Bar v-bind:setQuery="setQuery"/>
+		</v-app-bar>
+		<v-main>
+			<v-container app>
+				<Main v-bind:query="query"/>
+			</v-container>
+		</v-main><!--
+		<v-footer app>
+			<Footer/>
+		</v-footer>-->
+	</v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Bar from './components/Bar'
+import Main from './components/Main'
+//import Footer from './components/Footer'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: { Bar, Main, /*Footer*/ },
+	data() {
+		return {
+			query: 'me',
+		}
+	},
+	methods: {
+		setQuery(arg) {
+			this.query = arg
+		}
+	},
+	created () {
+		this.$vuetify.theme.dark = true
+	}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+	text-transform: none !important;
+}
+p {
+    font-size: 1em;
 }
 </style>
+
+<!--
+<v-icon large>fab fa-pagelines</v-icon>
+<v-icon class="mdi-36px">mdi-leaf</v-icon>
+eco
+-->
