@@ -1,4 +1,4 @@
-<!-- Git -->
+
 <template>
     <v-container fluid app>
         <p class="font-weight-light grey--text">{{ many() }}Ежедневник с календарём и прогнозом погоды</p>
