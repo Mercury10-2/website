@@ -1,15 +1,12 @@
 
 <template>
     <v-container fluid app>
+        <p class="font-weight-light grey--text mt-3">I.{{ few() }}Программирование:</p>
         <v-row>
             <v-col>
-                <p class="font-weight-light grey--text mt-3">I.{{ few() }}Программирование:</p>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col>
-                <p class="font-weight-light grey--text mt-3">{{ many() }}Онлайн-курсы программирования на Java
-                        {{ spaces() }}javarush.ru:</p>
+                <p class="font-weight-light grey--text mt-3">{{ many() }}
+                        Курсы программирования на Java{{ spaces() }}javarush.ru:
+                </p>
             </v-col>
         </v-row>
         <v-row>
@@ -87,11 +84,15 @@
             </v-col>
         </v-row>
         <v-divider></v-divider>
+        <v-row>
+            <v-col>
                 <p class="font-weight-light grey--text mt-3">II.{{ few() }}Другое:</p>
                 <p class="font-weight-light grey--text mt-3">{{ many() }}
                         СПБГУ{{ few() }}Экономический факультет</p>
                 <p class="font-weight-light grey--text mt-3">{{ many() }}
                         СПБГУ{{ few() }}Восточный факультет</p>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 
@@ -139,7 +140,3 @@ export default {
 <style>
 
 </style>
-<!--
-https://acm.timus.ru/author.aspx?id=277293
-https://www.hackerrank.com/otisler?hr_r=1
--->

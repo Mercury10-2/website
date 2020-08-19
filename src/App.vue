@@ -1,7 +1,7 @@
 <!--
-Изменить картинку в Bar
-Ссылки на спортивное программирование
 Класс для формата текста
+В браузере tabs, отображающие не название проекта, а что-то иное
+Добавить сам вебсайт в проекты !!!!!!!!!!!!!!!!!!!!!!!!
 -->
 <template>
 	<v-app app>
@@ -12,21 +12,17 @@
 			<v-container app>
 				<Main v-bind:query="query"/>
 			</v-container>
-		</v-main><!--
-		<v-footer app>
-			<Footer/>
-		</v-footer>-->
+		</v-main>
 	</v-app>
 </template>
 
 <script>
 import Bar from './components/Bar'
 import Main from './components/Main'
-//import Footer from './components/Footer'
 
 export default {
 	name: 'App',
-	components: { Bar, Main, /*Footer*/ },
+	components: { Bar, Main },
 	data() {
 		return {
 			query: 'me',

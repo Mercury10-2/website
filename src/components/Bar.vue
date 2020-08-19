@@ -1,9 +1,6 @@
 
 <template>
-    <v-app-bar fixed app><!-- color="#6A76AB" dark v-bind:src="background" app>
-        <template v-slot:img="{ props }">
-            <v-img v-bind="props" gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)" ></v-img>
-        </template>-->
+    <v-app-bar fixed app>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
@@ -15,7 +12,7 @@
                 <v-tab class="font-weight-light" v-on:click="setQuery('me')">Обо мне</v-tab>
                 <v-tab class="font-weight-light" v-on:click="setQuery('projects')">Проекты</v-tab>
                 <v-tab class="font-weight-light" v-on:click="setQuery('education')">Образование</v-tab>
-                <v-tab class="font-weight-light" v-on:click="setQuery('hobby')">Хобби</v-tab>
+                <v-tab class="font-weight-light" v-on:click="setQuery('hobby')">Интересы</v-tab>
                 <v-tab class="font-weight-light" v-on:click="setQuery('contacts')">Контакты</v-tab> 
                 <v-spacer></v-spacer>
             </v-tabs>
@@ -26,12 +23,10 @@
 <script>
 export default {
     name: 'Bar',
-    props: [ 'setQuery' ],
-    data: () => ({
-        background: require('../assets/Water.jpeg'),
-    })
+    props: [ 'setQuery' ]
 }
 </script>
 
 <style>
+
 </style>
