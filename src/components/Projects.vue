@@ -1,7 +1,7 @@
 
 <template>
     <v-container fluid app>
-        <p class="font-weight-light grey--text">Ежедневник с календарём и прогнозом погоды</p>
+        <p class="font-weight-light grey--text">Ежедневник с календарём и прогнозом погоды:</p>
         <p class="font-weight-light grey--text">{{ many() }}Front:</p>
         <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
                 {{ spaces() }}JavaScript,
