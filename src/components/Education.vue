@@ -1,7 +1,7 @@
 
 <template>
     <v-container fluid app>
-        <p class="font-weight-light grey--text mt-3">I.{{ few() }}Программирование:</p>
+        <p class="font-weight-light grey--text mt-3">{{ few() }}Программирование:</p>
         <v-row>
             <v-col>
                 <p class="font-weight-light grey--text mt-3">{{ many() }}
@@ -86,7 +86,7 @@
         <v-divider></v-divider>
         <v-row>
             <v-col>
-                <p class="font-weight-light grey--text mt-3">II.{{ few() }}Другое:</p>
+                <p class="font-weight-light grey--text mt-3">{{ few() }}Другое:</p>
                 <p class="font-weight-light grey--text mt-3">{{ many() }}
                         СПБГУ{{ few() }}Экономический факультет</p>
                 <p class="font-weight-light grey--text mt-3">{{ many() }}

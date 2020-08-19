@@ -14,7 +14,7 @@
         </v-row>
         <v-row>
             <v-col>
-                <p class="font-weight-light grey--text spaces">Мой основной стэк: </p>
+                <p class="font-weight-light grey--text spaces">Основной стэк: </p>
                 <p class="font-weight-light grey--text">{{ getSpaces() }}Java:{{ getSpaces() }}
                         Spring Boot,{{ veryLittleSpace() }}
                         Maven,{{ veryLittleSpace() }}
@@ -26,8 +26,7 @@
                 <p class="font-weight-light grey--text">{{ getSpaces() }}
                         Git,{{ veryLittleSpace() }}
                         SQL,{{ veryLittleSpace() }}
-                        Hibernate,{{ veryLittleSpace() }}
-                        Tomcat,{{ veryLittleSpace() }}
+                        JUnit,{{ veryLittleSpace() }}
                         Freemarker,{{ veryLittleSpace() }}
                         HTML,{{ veryLittleSpace() }}
                         CSS,{{ veryLittleSpace() }}

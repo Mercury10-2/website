@@ -101,7 +101,7 @@
         <v-divider></v-divider>
         <br>
         <br>
-        <p class="font-weight-light grey--text">Личная страница: (не забыть вбить деплой)</p>
+        <p class="font-weight-light grey--text">Личная страница:</p>
         <p class="font-weight-light grey--text">{{ many() }}Front:</p>
         <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
                 {{ spaces() }}JavaScript,
@@ -139,7 +139,7 @@ export default {
             storeGit: 'https://github.com/Mercury10-2/Store/tree/master/src/main',
             screensaver: 'https://mercury10-2.github.io/Particles',
             screensaverGit: 'https://github.com/Mercury10-2/Particles',
-            website: 'https://github.com/Mercury10-2/website/tree/master/src',
+            website: 'https://mercury10-2.github.io/website',
             websiteGit: 'https://github.com/Mercury10-2/website/tree/master/src'
         }
     },
@@ -171,7 +171,7 @@ export default {
             else if (val == 8)
                 return this.website
             else
-            return this.websiteGit
+                return this.websiteGit
         }
     }
 }
