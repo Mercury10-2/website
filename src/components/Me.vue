@@ -27,7 +27,8 @@
                         Git,{{ veryLittleSpace() }}
                         SQL,{{ veryLittleSpace() }}
                         JUnit,{{ veryLittleSpace() }}
-                        Freemarker,{{ veryLittleSpace() }}
+                        Freemarker,{{ veryLittleSpace() }},
+                        Postman,{{ veryLittleSpace() }}
                         HTML,{{ veryLittleSpace() }}
                         CSS,{{ veryLittleSpace() }}
                         regex,{{ veryLittleSpace() }}

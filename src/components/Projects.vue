@@ -1,6 +1,49 @@
 
 <template>
     <v-container fluid app>
+        <p class="font-weight-light grey--text">Месенжер:</p>
+        <p class="font-weight-light grey--text">{{ many() }}Front:</p>
+        <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
+                {{ spaces() }}JavaScript,
+                {{ few() }}VueJs,
+                {{ few() }}Vuetify,
+                {{ few() }}Axios
+        </p>
+        <p class="font-weight-light grey--text">{{ many() }}Back:</p>
+        <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
+                {{ spaces() }}Java,
+                {{ few() }}Spring Boot REST,
+                {{ few() }}Spring (Security, Web, Data),
+        </p>
+        <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
+                {{ few() }}JWT,
+                {{ few() }}Web Sockets,
+                {{ few() }}Unit Tests,
+                {{ few() }}Maven,
+                {{ few() }}PostgreSQL
+        </p>
+        <p class="font-weight-light grey--text">{{ many() }}Deploy:</p>
+        <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
+        {{ spaces() }}({{ few() }}в разработке{{ few() }})</p>
+        <v-row>
+            <v-col cols="12" sm="2" md="2" lg="2" xl="2"></v-col>
+            <v-col cols="12" sm="3" md="3">
+                <v-btn icon x-large v-bind:href="getLink(10)" target="_blank">
+                    <v-icon color="grey darken-1" large>share</v-icon>
+                </v-btn>
+            </v-col>
+            <v-col cols="12" sm="3" md="3">
+                <v-btn icon x-large v-bind:href="getLink(11)" target="_blank">
+                    <v-icon color="grey darken-1" large>share</v-icon>
+                </v-btn>
+            </v-col>
+        </v-row>
+        <br>
+        <v-divider></v-divider>
+        <br>
+        <br>
+
+
         <p class="font-weight-light grey--text">Ежедневник с календарём и прогнозом погоды:</p>
         <p class="font-weight-light grey--text">{{ many() }}Front:</p>
         <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
@@ -140,7 +183,9 @@ export default {
             screensaver: 'https://mercury10-2.github.io/Particles',
             screensaverGit: 'https://github.com/Mercury10-2/Particles',
             website: 'https://mercury10-2.github.io/website',
-            websiteGit: 'https://github.com/Mercury10-2/website/tree/master/src'
+            websiteGit: 'https://github.com/Mercury10-2/website/tree/master/src',
+            messagerClient: 'https://github.com/Mercury10-2/Messanger_client/tree/master/src',
+            messagerServer: 'https://github.com/Mercury10-2/Messanger_server2.0/tree/master/src/main/java/server_2/messanger'
         }
     },
     methods: {
@@ -170,8 +215,12 @@ export default {
                 return this.screensaverGit
             else if (val == 8)
                 return this.website
-            else
+            else if (val == 9)
                 return this.websiteGit
+            else if (val == 10)
+                return this.messagerClient
+            else
+                return this.messagerServer
         }
     }
 }
