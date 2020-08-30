@@ -16,7 +16,7 @@
                 {{ few() }}Spring (Security, Web, Data),
         </p>
         <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
-                {{ few() }}JWT,
+                {{ spaces() }}JWT,
                 {{ few() }}Web Sockets,
                 {{ few() }}Unit Tests,
                 {{ few() }}Maven,
