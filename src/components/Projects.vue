@@ -6,6 +6,8 @@
         <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
                 {{ spaces() }}JavaScript,
                 {{ few() }}VueJs,
+                {{ few() }}Vuex,
+                {{ few() }}Vue Router,
                 {{ few() }}Vuetify,
                 {{ few() }}Axios
         </p>

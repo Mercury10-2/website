@@ -17,10 +17,16 @@
                 <p class="font-weight-light grey--text spaces">Основной стэк: </p>
                 <p class="font-weight-light grey--text">{{ getSpaces() }}Java:{{ getSpaces() }}
                         Spring Boot,{{ veryLittleSpace() }}
+                        Spring Security,{{ veryLittleSpace() }}
+                        JPA,{{ veryLittleSpace() }}
                         Maven,{{ veryLittleSpace() }}
                         PostgreSQL</p>
                 <p class="font-weight-light grey--text">{{ getSpaces() }}JavaScript:{{ littleSpace() }}
-                        Vue,{{ veryLittleSpace() }}Vuetify,{{ veryLittleSpace() }}Axios</p>
+                        Vue,{{ veryLittleSpace() }}
+                        Vuex,{{ veryLittleSpace() }}
+                        Vue Router,{{ veryLittleSpace() }}
+                        Vuetify,{{ veryLittleSpace() }}
+                        Axios</p>
                 <br>
                 <p class="font-weight-light grey--text spaces">Кроме того, знаком с:</p>
                 <p class="font-weight-light grey--text">{{ getSpaces() }}
@@ -28,12 +34,12 @@
                         SQL,{{ veryLittleSpace() }}
                         JUnit,{{ veryLittleSpace() }}
                         Freemarker,{{ veryLittleSpace() }}
-                        Postman,{{ veryLittleSpace() }}
                         HTML,{{ veryLittleSpace() }}
                         CSS,{{ veryLittleSpace() }}
                         regex,{{ veryLittleSpace() }}
                         CI/CD,{{ veryLittleSpace() }}
-                        Heroku
+                        Heroku,{{ veryLittleSpace() }}
+                        Postman{{ veryLittleSpace() }}
                 </p>
                 <br>
                 <p class="font-weight-light grey--text spaces">Среды разработки:{{ littleSpace() }} </p>
