@@ -5,7 +5,7 @@
         <p class="font-weight-light grey--text">{{ many() }}Front:</p>
         <p class="font-weight-light grey--text">{{ many() }}{{ many() }}
                 {{ spaces() }}JavaScript,
-                {{ few() }}VueJs,
+                {{ few() }}Vue,
                 {{ few() }}Vuex,
                 {{ few() }}Vue Router,
                 {{ few() }}Vuetify,
@@ -186,7 +186,7 @@ export default {
             screensaverGit: 'https://github.com/Mercury10-2/Particles',
             website: 'https://mercury10-2.github.io/website',
             websiteGit: 'https://github.com/Mercury10-2/website/tree/master/src',
-            messagerClient: 'https://github.com/Mercury10-2/Messanger_client/tree/master/src',
+            messagerClient: 'https://github.com/Mercury10-2/Messanger_client2.0/tree/master/src',
             messagerServer: 'https://github.com/Mercury10-2/Messanger_server2.0/tree/master/src/main/java/server_2/messanger'
         }
     },
